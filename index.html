@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Payment</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #1e3c72;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #16325c;
+        }
+        .qr {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .qr img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <input type="number" placeholder="Age" required>
+            <input type="text" placeholder="Location" required>
+            <input type="text" placeholder="Qualification" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="qr">
+            <p>Scan to Pay</p>
+            <!-- Replace 'phonepe.png' with your actual QR/Barcode image file -->
+            <img src="phonepe.png" alt="Payment QR Code">
+        </div>
+    </div>
+</body>
+</html>
